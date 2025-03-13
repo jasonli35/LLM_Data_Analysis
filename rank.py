@@ -83,40 +83,40 @@ def get_rank(num_criteria = [], confident=0.5, num_top_model=5, str_criteria = [
 
 
     
-#tech industry
-tech_cri = ["#Params (B)", "MUSR"]
-tech_industry_models = [("Architecture", "GPTNeoXForCausalLM"), ("Architecture", "LlamaForCausalLM"), ("Architecture", "Qwen2ForCausalLM"), ("Architecture", "Qwen2MoeForCausalLM"), ("Architecture","T5ForConditionalGeneration"), ("Architecture", "CohereForCausalLM"), ("Architecture", "GPTJForCausalLM")]
-print("Ranking for tech industry: ",get_rank(tech_cri, confident=0.5, num_top_model=3, str_criteria = tech_industry_models))
-print(">>>>>>>>>>>>>>>>")
+# #tech industry
+# tech_cri = ["#Params (B)", "MUSR"]
+# tech_industry_models = [("Architecture", "GPTNeoXForCausalLM"), ("Architecture", "LlamaForCausalLM"), ("Architecture", "Qwen2ForCausalLM"), ("Architecture", "Qwen2MoeForCausalLM"), ("Architecture","T5ForConditionalGeneration"), ("Architecture", "CohereForCausalLM"), ("Architecture", "GPTJForCausalLM")]
+# print("Ranking for tech industry: ",get_rank(tech_cri, confident=0.5, num_top_model=3, str_criteria = tech_industry_models))
+# print(">>>>>>>>>>>>>>>>")
 
-academic_num_cri = ["MUSR", "MATH Lvl 5", "GPQA"]
-print("Ranking for academic industry: ", get_rank(academic_num_cri, confident=0.5, num_top_model=3))
-print(">>>>>>>>>>>>>>>>")
-
-
-
-manufac_num_cri = ["MMLU-PRO", "#Params (B)", "BBH", "IFEval"]
-best_architecture_for_manufacturing = [("Architecture", "LlamaForCausalLM"), ("Architecture", "GPTJForCausalLM"), ("Architecture", "CohereForCausalLM"), 
-                                       ("Architecture", "T5ForConditionalGeneration"), ("Architecture", "RwkvForCausalLM")]
-find_tune = [("Type", "🔶 fine-tuned on domain-specific datasets")]
-manu_str_cri = best_architecture_for_manufacturing + find_tune
-
-print("Ranking for manufacture industry: ", get_rank(manufac_num_cri, confident=0.5, num_top_model=3, str_criteria=manu_str_cri, range_matrices = {"CO₂ cost (kg)": (0, 8), "#Params (B)": (0, 10)}))  
-
-print(">>>>>>>>>>>>>>>>")
+# academic_num_cri = ["MUSR", "MATH Lvl 5", "GPQA"]
+# print("Ranking for academic industry: ", get_rank(academic_num_cri, confident=0.5, num_top_model=3))
+# print(">>>>>>>>>>>>>>>>")
 
 
-cs_num_cri = ["IFEval", "MMLU-PRO"]
-cs_str_cri = [("T", "💬"), ("Type", "💬 chat models (RLHF, DPO, IFT, ...)")]
 
-print("Ranking for customer service industry: ", get_rank(cs_num_cri, confident=0.8, num_top_model=10, str_criteria=cs_str_cri))
-print(">>>>>>>>>>>>>>>>")
+# manufac_num_cri = ["MMLU-PRO", "#Params (B)", "BBH", "IFEval"]
+# best_architecture_for_manufacturing = [("Architecture", "LlamaForCausalLM"), ("Architecture", "GPTJForCausalLM"), ("Architecture", "CohereForCausalLM"), 
+#                                        ("Architecture", "T5ForConditionalGeneration"), ("Architecture", "RwkvForCausalLM")]
+# find_tune = [("Type", "🔶 fine-tuned on domain-specific datasets")]
+# manu_str_cri = best_architecture_for_manufacturing + find_tune
 
-co2_cri = ["CO₂ cost (kg)"]
-print("ranking for co2 with range(10, 10000)")
-print(get_rank(co2_cri, confident=1.0, rank_reversed=True, num_top_model=3,range_matrices = {"CO₂ cost (kg)": (10, 10000)}))
+# print("Ranking for manufacture industry: ", get_rank(manufac_num_cri, confident=0.5, num_top_model=3, str_criteria=manu_str_cri, range_matrices = {"CO₂ cost (kg)": (0, 8), "#Params (B)": (0, 10)}))  
 
-print("normal co2 rank")
-print("ranking for cos2", get_rank(co2_cri, confident=1.0, num_top_model=3, rank_reversed=True))
+# print(">>>>>>>>>>>>>>>>")
+
+
+# cs_num_cri = ["IFEval", "MMLU-PRO"]
+# cs_str_cri = [("T", "💬"), ("Type", "💬 chat models (RLHF, DPO, IFT, ...)")]
+
+# print("Ranking for customer service industry: ", get_rank(cs_num_cri, confident=0.8, num_top_model=10, str_criteria=cs_str_cri))
+# print(">>>>>>>>>>>>>>>>")
+
+# co2_cri = ["CO₂ cost (kg)"]
+# print("ranking for co2 with range(10, 10000)")
+# print(get_rank(co2_cri, confident=1.0, rank_reversed=True, num_top_model=3,range_matrices = {"CO₂ cost (kg)": (10, 10000)}))
+
+# print("normal co2 rank")
+# print("ranking for cos2", get_rank(co2_cri, confident=1.0, num_top_model=3, rank_reversed=True))
 
 
