@@ -18,6 +18,17 @@ LLM_Data_Analysis/
 The main.py file contains the code for the ranking algorithm. The preprocess directory includes hypothesis testing to filter out bad data. The visualization.ipynb file contains all visualizations. The additional_code folder includes all the source code we worked on for this project. Demonstration of ranking of different industry can be found in additional_code/rank.ipynb 
 
 
+## Thrid party module
+- hypothesis module - The hypothesis module is a third-party Python library used for property-based testing. Instead of writing specific test cases, hypothesis generates a wide range of test inputs automatically and checks if the code behaves correctly for all of them.
+- panda
+- numpy
+- matplotlib
+- datasets - The Hugging Face datasets library is an Python package for loading, processing, and using large-scale datasets, particularly for machine learning (ML) and natural language processing (NLP) tasks.
+- third-party Python library built on top of Matplotlib that is designed for making statistical visualizations more attractive and insightful
+
+
+## Data visualization 
+data visualization code can be found in visualization.ipynb
 
 
 ## How to run the code?
@@ -78,23 +89,6 @@ This filters models with CO2 cost between 10 and 10000
 6. rank_reversed (bool, default: False)
 
 If True, reverses the ranking order (useful for metrics where lower is better, such as inference time).
-
-Example:
-
-## Thrid party module
-- hypothesis module - The hypothesis module is a third-party Python library used for property-based testing. Instead of writing specific test cases, hypothesis generates a wide range of test inputs automatically and checks if the code behaves correctly for all of them.
-- panda
-- numpy
-- matplotlib
-- datasets - The Hugging Face datasets library is an Python package for loading, processing, and using large-scale datasets, particularly for machine learning (ML) and natural language processing (NLP) tasks.
-- third-party Python library built on top of Matplotlib that is designed for making statistical visualizations more attractive and insightful
-
-
-## Data visualization 
-data visualization code can be found in visualization.ipynb
-
-
-
 
 
 
