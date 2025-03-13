@@ -1,5 +1,7 @@
 ## File structure
+
 LLM_Data_Analysis/
+
 │── .hypothesis/examples/      # Hypothesis testing examples
 │── additional_code/           # Additional scripts and notebooks for data analysis
 │    │── MMLU_basic_analysis.ipynb  # Notebook for analyzing MMLU benchmark data
@@ -15,6 +17,7 @@ LLM_Data_Analysis/
 
 ## How to run the code?
 To run the code, type python3 main.py on the terminal
+1
 
 ## Data visualization 
 data visualization code is calld visualization.ipynb
