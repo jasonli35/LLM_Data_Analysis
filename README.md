@@ -24,7 +24,7 @@ The main.py file contains the code for the ranking algorithm. The preprocess dir
 - numpy
 - matplotlib
 - datasets - The Hugging Face datasets library is an Python package for loading, processing, and using large-scale datasets, particularly for machine learning (ML) and natural language processing (NLP) tasks.
-- third-party Python library built on top of Matplotlib that is designed for making statistical visualizations more attractive and insightful
+- seaborn - third-party Python library built on top of Matplotlib that is designed for making statistical visualizations more attractive and insightful
 
 
 ## Data visualization 
