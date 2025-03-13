@@ -1,4 +1,4 @@
-### How to run the code?
+## How to run the code?
 To run the code, type python3 main.py on the terminal
 
 ## Data visualization 
