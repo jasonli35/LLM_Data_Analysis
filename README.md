@@ -5,9 +5,9 @@ LLM_Data_Analysis/
 │── .hypothesis/examples/      
 │── additional_code/           
 │    │── MMLU_basic_analysis.ipynb  
-│    │── main.py                   
+│    │── rank.py                   
 │    │── preprocess.ipynb           
-│    │── rank.ipynb                 
+│    │── visualization.ipynb                 
 │── .gitignore                
 │── How to choose a good LLM.pdf  
 │── README.md                 
